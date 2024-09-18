@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#garden">Garden Tour</a></li>
+                <li><a href="#plant-library">Plant Library</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section: Introduction to Virtual Herbal Garden -->
+    <section id="home" class="section intro">
+        <div class="container">
+            <h1>Welcome to the Virtual Herbal Garden</h1>
+            <p>Explore the world of medicinal plants and learn about their traditional uses in AYUSH systems.</p>
+            <button onclick="startGardenTour()">Start Garden Tour</button>
+        </div>
+    </section>
+
+    <!-- Garden Tour Section -->
+    <section id="garden" class="section garden-tour">
+        <h2>Interactive Herbal Garden</h2>
+        <div class="garden-container">
+            <div class="plant" onclick="showPlantInfo('Tulsi')">
+                <img src="tulsi-leaves-500x500.png" alt="Tulsi Plant">
+                <p>Tulsi</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Neem')">
+                <img src="pngtree-neem-leaves-benefits-beauty-leaf-natural-genrative-ai-png-image_11881921.png" alt="Neem Plant">
+                 
+                <p>Neem</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Ashwagandha')">
+                <img src="litenenhsquareashprofil2_1200x1200.jpg" alt="Ashwagandha Plant">
+                <p>Ashwagandha</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Brahmi')">
+                <img src="MAIN_139d635e-9069-4ff0-8c09-a1427135ceb4.png" alt="Brahmi Plant">
+                <p>Brahmi</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Aloe Vera')">
+                <img src= "no-perennial-no-aloe-vera-popular-medicinal-plant-in-poly-1-original-imagbsz3yvqqgydx.png" alt="Aloe Vera Plant">
+                <p>Aloe Vera</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Turmeric')">
+                <img src="grow-your-own-turmeric-pink-flowers-header.png" alt="Turmeric Plant">
+                <p>Turmeric</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Shatavari')">
+                <img src="Shatavari-Plant-images-Shatavari-Asparagus-Racemosus-Uses-Benefits-and-Effects-on-Dosha.png" alt="Shatavari Plant">
+                <p>Shatavari</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Giloy')">
+                <img src="organic-giloy-leaves.png" alt="Giloy Plant">
+                <p>Giloy</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Peppermint')">
+                <img src="peppermint-1-scaled.png" alt="Peppermint Plant">
+                <p>Peppermint</p>
+            </div>
+            <div class="plant" onclick="showPlantInfo('Sandalwood')">
+                <img src="images.png" alt="Sandalwood Plant">
+                <p>Sandalwood</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Library Section -->
+    <section id="plant-library" class="section plant-library">
+        <h2>Medicinal Plant Library</h2>
+        <div id="plant-info">
+            <!-- Dynamic plant info will be displayed here -->
+        </div>
+    </section>
+
+    <!-- Quizzes Section -->
+    <section id="quizzes" class="section quizzes">
+        <h2>Test Your Knowledge</h2>
+        <p>Interactive quizzes about medicinal plants and their uses.</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+
+        <!-- Quiz will display here -->
+        <div id="quiz-section" style="display: none;">
+            <h3>Herbal Quiz</h3>
+            <div id="quiz"></div>
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section community">
+        <h2>Join the Herbal Medicine Community</h2>
+        <p>Connect with others and share your experiences in learning about herbal medicine.</p>
+    </section>
+
+    <!-- Footer -->
+   <! <footer>
+        <p>© 2024 Virtual Herbal Garden. All rights reserved.</p>
+    </footer
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
