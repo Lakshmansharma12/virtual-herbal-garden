@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('yoNWec.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Overlay effect on the background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make the content pop */
+    z-index: -1; /* Puts the overlay behind content */
+}
+
+
+header {
+    background-color: rgba(0, 128, 77, 0.8); /* Semi-transparent green */
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Bright yellow hover effect */
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: transparent;
+    color: white;
+}
+
+/* Intro Section with Centered Content */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds depth to the text */
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Garden Tour Styling */
+.garden-tour {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight transparency for garden section */
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.garden-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plant {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plant img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.plant img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.plant p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Plant Information Section */
+#plant-library h2 {
+    margin-bottom: 30px;
+}
+
+#plant-info {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Adds depth */
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 128, 0, 0.9); /* Dark green footer */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
